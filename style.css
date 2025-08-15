@@ -86,9 +86,12 @@ button.wide {
     margin-top: 2.5em;
     /* the above placed the buttons down */
     padding-bottom: .5em;
+    margin-bottom: 10px;
     font-size: 25px;
     display: flex;
     justify-content: end;
-    align-items: baseline;
+    align-items: center;
     color: var(--white);
+    background-color: var(--black);
+    border: none;
 }

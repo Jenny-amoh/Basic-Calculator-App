@@ -15,30 +15,30 @@
 <body>
     <main class="ball-badge">
         <div class="container">
-            <div class="resultField">Result field</div>
+            <input class="resultField" id="result" readonly></input>
            <div class="buttons">
-             <button class="button">AC</button>
-                <button class="button del">
+             <button onclick="clearDisplay()" class="button AC" id="AC">AC</button>
+                <button onclick="del()" class="button del" id="del">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
                         <path d="m456-320 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Zm-96 160q-19 0-36-8.5T296-192L80-480l216-288q11-15 28-23.5t36-8.5h440q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H360ZM180-480l180 240h440v-480H360L180-480Zm400 0Z"/>
                     </svg>
                 </button>
-                <button class="button operator">*</button>
-                <button class="button operator">/</button>
-                <button class="button">7</button>
-                <button class="button">8</button>
-                <button class="button">9</button>
-                <button class="button operator">-</button>
-                <button class="button">4</button>
-                <button class="button">5</button>
-                <button class="button">6</button>
-                <button class="button operator tall">+</button>
-                <button class="button">1</button>
-                <button class="button">2</button>
-                <button class="button">3</button>
-                <button class="button wide">0</button>
-                <button class="button dot">.</button>
-                <button class="button operator equals">=</button>
+                <button onclick="appendToDisplay ('*')" class="button operator" id="operator">*</button>
+                <button onclick="appendToDisplay ('/')" class="button operator" id="operator">/</button>
+                <button onclick="appendToDisplay ('7')" class="button" id="btn">7</button>
+                <button onclick="appendToDisplay ('8')" class="button" id="btn">8</button>
+                <button onclick="appendToDisplay ('9')" class="button" id="btn">9</button>
+                <button onclick="appendToDisplay ('-')" class="button operator" id="operator">-</button>
+                <button onclick="appendToDisplay ('4')" class="button" id="btn">4</button>
+                <button onclick="appendToDisplay ('5')" class="button" id="btn">5</button>
+                <button onclick="appendToDisplay ('6')" class="button" id="btn">6</button>
+                <button onclick="appendToDisplay ('+')" class="button operator tall" id="operator">+</button>
+                <button onclick="appendToDisplay ('1')" class="button" id="btn">1</button>
+                <button onclick="appendToDisplay ('2')" class="button" id="btn">2</button>
+                <button onclick="appendToDisplay ('3')" class="button" id="btn">3</button>
+                <button onclick="appendToDisplay ('0')" class="button wide" id="btn">0</button>
+                <button onclick="appendToDisplay ('.')" class="button dot" id="btn">.</button>
+                <button onclick="calculate()" class="button operator equals" id="equals">=</button>
            </div>
            
         </div>
