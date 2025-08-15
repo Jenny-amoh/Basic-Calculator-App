@@ -1,0 +1,94 @@
+:root{
+    --skyblue:rgba(218, 240, 255, 0.73);
+    --hoverblue:#3182ce;
+    --ballblue: rgb(13,139,226);
+    --blue: #2b6cb0;
+    --darkBlue: rgb(6,97,163);
+    --fontBlue:#1792ff;
+    --black: rgb(21,27,32);
+    --grey: #5e5e60;
+    --darkGrey: #303037;
+    --white: #ffff;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'funnel display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--skyblue);
+}
+.ball-badge{
+    height: 600px;
+    width: 600px;
+    background-color: var(--ballblue);
+    border-radius: 400px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.container{
+    max-height: 500px;
+    max-width: 300px;
+    background-color: var(--black);
+    border-radius: 30px;
+    padding: 1em;
+   
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+   
+}
+button{
+    background-color: var(--darkGrey);
+    padding: 20px;
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: background-color 0.3s; */
+}
+.button:hover{
+    background-color: var(--grey);
+}
+svg{
+    color: var(--white);
+}
+.button.dot{
+    font-size: 30px;
+    padding: 10px;
+}
+button.operator {
+  background-color: var(--blue);
+  font-size: 30px;
+  padding: 10px;
+}
+
+button.operator:hover {
+  background-color: var(--hoverblue);
+}
+button.tall {
+  grid-row: span 2;
+}
+button.wide {
+  grid-column: span 2;
+}
+.resultField{
+    margin-top: 2.5em;
+    /* the above placed the buttons down */
+    padding-bottom: .5em;
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    color: var(--white);
+}
